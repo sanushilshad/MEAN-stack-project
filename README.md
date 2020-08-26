@@ -1,5 +1,5 @@
 TYPERTEXT
-A web app designed to create, update and delete texts online.
+A web app designed to create, update and delete texts online using MEAN stack.
 
 
 ## Dependencies
