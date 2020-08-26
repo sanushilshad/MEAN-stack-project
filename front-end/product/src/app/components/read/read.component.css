@@ -1,0 +1,19 @@
+.s1{
+    width: 900px;
+  height: 600px;
+  position: relative;
+  left: 10%;
+  top: 90%;
+  ;
+}
+.sticky {
+    
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .container{
+    row-gap: 10px;
+  }

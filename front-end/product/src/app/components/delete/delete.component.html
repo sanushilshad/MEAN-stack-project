@@ -1,0 +1,87 @@
+
+  <form #userForm="ngForm" novalidate (ngSubmit)=onsubmit()>
+        <!--   {{userForm.value | json}}
+           {{usermodel | json }}
+           -->
+       
+       
+         <div class="container">
+       
+         <div class="row">
+       
+             <div class="col-sm-1 ">
+                
+                   
+             </div>
+       <div class="col-sm-5">
+           File Name
+             
+       </div>
+       </div>
+       <div class="row">
+           <div class="col-sm-1 ">
+           </div>
+           <div class="col-sm-3">
+               <div class="form-group  w-65">
+              
+               <input type="text"  placeholder="File Name" class="form-control" name="f_names" [(ngModel)]="delete.f_names" size="20" >  
+               </div>
+             </div>
+       </div>
+       
+       <div class="row">
+           <div class="col-sm-1 ">
+           </div>
+           <div class="col-sm-5 ">
+               <label>Password </label>
+              
+           </div>
+       
+       
+           
+       </div>  
+       
+       <div class="row">
+           <div class="col-sm-1 ">
+           </div>
+           <div class="col-sm-3 ">
+               <div class="form-group  w-65">
+               <input type="password"  placeholder="password" class="form-control" name="f_names" [(ngModel)]="delete.password" size="20" >
+               </div>
+           </div>
+       </div> 
+       
+       
+       <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-0.5">
+            </div>
+        <div class="col-sm-1">
+            &nbsp; &nbsp; &nbsp;
+        <input type="submit" id="fielsubmiit"class="btn btn-outline-info">
+        
+        
+        </div> 
+      
+       </div>
+         </div>
+       
+       
+       
+       
+       
+              
+          
+           
+             
+       
+       
+   
+    
+     
+       </form>
+       
+       

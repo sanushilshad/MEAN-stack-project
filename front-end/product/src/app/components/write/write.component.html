@@ -1,0 +1,160 @@
+
+
+<!--<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<form #userForm="ngForm" novalidate (ngSubmit)=onsubmit()>
+ <!--   {{userForm.value | json}}
+    {{usermodel | json }}
+    -->
+
+
+  <div class="container">
+
+  <div class="row">
+
+      <div class="col-sm-1 ">
+         
+            
+      </div>
+<div class="col-sm-5">
+    File Name
+      
+</div>
+</div>
+<div class="row">
+    <div class="col-sm-1 ">
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group  w-65">
+       
+        <input type="text"  placeholder="File Name" class="form-control" name="f_names" [(ngModel)]="usermodel.f_names" size="20" >  
+        </div>
+      </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-1 ">
+    </div>
+    <div class="col-sm-5 ">
+        <label>Password </label>
+       
+    </div>
+
+
+    
+</div>  
+
+<div class="row">
+    <div class="col-sm-1 ">
+    </div>
+    <div class="col-sm-3 ">
+        <div class="form-group  w-65">
+        <input type="password"  placeholder="password" class="form-control" name="f_names" [(ngModel)]="usermodel.password" size="20" >
+        </div>
+    </div>
+</div> 
+
+<div class="row">
+    <div class="col-sm-1 ">
+    </div>
+    <div class="col-sm-3 ">
+        <p style="color: blueviolet">
+            {{result.f_names}}
+            
+        </p>
+         
+    </div>
+</div> 
+
+
+</div>
+
+
+
+
+
+       
+   
+    
+      
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm-1">
+          
+      </div>
+<div class="col-sm-3">
+Content
+</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-1">
+        
+        </div>
+    <div class="col-sm-11">
+        <div class="form-group  w-65">
+        <textarea  name="txt_comments" name="txt_comments" rows="10" cols="900" class="form-control " [(ngModel)]="usermodel.txt_comments">
+          </textarea>
+        </div>
+    </div>
+   
+</div>
+
+</div>
+
+
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="row">
+    <div class="col-sm-4">
+    </div>
+<div class="col-sm-4">
+    &nbsp; &nbsp; &nbsp;
+<input type="submit" id="fielsubmiit"class="btn btn-outline-info">
+&nbsp;
+<button type="button" id="clear"class="btn btn-outline-info" (click)="clear()">CLEAR</button>
+
+
+</div>
+</div>
+
+</form>
+

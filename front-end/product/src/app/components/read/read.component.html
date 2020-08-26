@@ -1,0 +1,238 @@
+
+
+
+
+
+
+
+
+
+<form #userForm="ngForm" novalidate (ngSubmit)=onsubmit()>
+
+
+
+    <div class="container ">
+
+        <div class="row">
+      
+            <div class="col-sm-1 ">
+               
+                  
+            </div>
+      <div class="col-sm-5">
+          File Name
+            
+      </div>
+      </div>
+      <br>
+
+
+      <div class="row">
+      
+          <div class="col-sm-1 ">
+             
+                
+          </div>
+    <div class="col-sm-3">
+        <div class="form-group w-70">
+            
+         <input type="text" placeholder="File Name"  class="form-control" name="f_names" [(ngModel)]="search.f_names" >
+
+         <div class="col-sm-6 ">
+             
+                
+          </div>
+         <br>
+         <div class="row">
+      
+           
+      <div class="col-sm-3">
+         
+              
+              <input type="submit" id="submit" class="btn btn-outline-info">
+           <div class="col-sm-6 ">
+               
+                  
+            </div>
+           <br>
+          </div>
+         
+      </div>
+    
+        </div>
+        </div>
+    </div>
+    
+
+<hr>
+
+
+  
+
+
+
+
+
+
+
+
+    
+
+    <div class="row">
+      
+        <div class="col-sm-1 ">
+           
+              
+        </div>
+  <div class="col-sm-3">
+      <div class="form-group w-70">
+         
+          <h4>CONTENT:</h4>
+          <hr>
+      </div>
+      </div>
+           
+              
+    </div>
+
+
+   
+
+
+    <div class="row">
+      
+        <div class="col-sm-1 ">
+           
+              
+        </div>
+  <div class="col-sm-3">
+      <div class="form-group w-70">
+         
+          <h6 style="white-space: pre-line">
+              {{result3.txt_comments}}
+              
+
+          </h6>
+      </div>
+      </div>
+           
+              
+    </div>
+    <div class="row">
+      
+        <div class="col-sm-1 ">
+           
+              
+        </div>
+  <div class="col-sm-3">
+      <div class="form-group w-70">
+         
+          <button [disabled]="gs==true "(click)="copyMessage()" class="btn btn-outline-info" >Copy CONTENT</button>
+      </div>
+      </div>
+           
+              
+    </div>
+
+   
+    <hr> 
+    <br>
+
+    <form ng-init="initialize" novalidate (ngSubmit)="allowedit()"> 
+    <div class="row">
+      
+        <div class="col-sm-1 ">
+           
+              
+        </div>
+  <div class="col-sm-3">
+      <div class="form-group w-70">
+          
+              <label>PASSWORD:</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="password.password">
+         
+           
+      </div>
+      </div>         
+    </div>
+
+
+
+    <div class="row">
+      
+        <div class="col-sm-1 ">
+           
+              
+        </div>
+  <div class="col-sm-3">
+      <button [disabled]=" ds==true "  class="btn btn-outline-info" >EDIT CONTENT</button>
+      </div>         
+    </div>
+</form>
+<br>
+
+    <form ng-init="initialize" novalidate (ngSubmit)=edit()> 
+
+    <div class="row">
+      
+        <div class="col-sm-1 ">
+           
+              
+        </div>
+  <div class="col-sm-11">
+      <div class="form-group w-65">
+          
+              
+          <textarea disabled={{bool}} name='a' rows="10" cols="9000"  class="form-control" [(ngModel)]="result3.txt_comments">
+            </textarea>
+
+        
+            
+           
+      </div>
+      </div>         
+    </div>
+
+
+
+    <div class="row">
+      
+        <div class="col-sm-5 ">
+           
+              
+        </div>
+  <div class="col-sm-4">
+      <div class="form-group w-70">
+          
+              
+          <input  [disabled]=" fs==true " type="submit"   id="submit1" class="btn btn-outline-info">
+
+          
+            <br>
+            
+           
+      </div>
+      </div>         
+    </div>
+
+  
+  </form>
+
+    </div>     
+      
+</form>
+
+               
+      
+            
+
+
+
+
+
+
+            
+
+
+
+                  

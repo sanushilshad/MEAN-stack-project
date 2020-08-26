@@ -1,0 +1,39 @@
+.sticky{
+    
+    position: relative;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.navbar-inverse .navbar-collapse {
+    background-color: whatever-you-need;
+    color: here-a-color;
+}
+  

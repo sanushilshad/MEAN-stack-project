@@ -1,0 +1,19 @@
+.footer {
+    background-color:white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align:right;
+}
+
+.sticky {
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 0px;
+    font-size: 10px;
+    
+  }
